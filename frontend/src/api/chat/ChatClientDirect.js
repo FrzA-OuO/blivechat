@@ -277,7 +277,7 @@ export default class ChatClientDirect {
       medalLevel: 0,
       id: getUuid4Hex(),
       translation: '',
-      isAction: true,
+      isEntry: true,
     }
     this.onAddText(data)
   }
@@ -308,7 +308,8 @@ export default class ChatClientDirect {
       medalLevel: 0,
       id: getUuid4Hex(),
       translation: '',
-      isAction: true,
+      isEntry: command.data.msg_type != 2,
+      isFollow: command.data.msg_type == 2,
     }
     this.onAddText(data)
   }

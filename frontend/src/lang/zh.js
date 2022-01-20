@@ -17,6 +17,8 @@ export default {
     showGiftName: '显示礼物名',
     mergeSimilarDanmaku: '合并相似弹幕',
     mergeGift: '合并礼物',
+    showEntry: '显示进入直播间',
+    showFollow: '显示关注直播间',
     minGiftPrice: '最低显示打赏价格（元）',
     maxNumber: '最大弹幕数',
 

@@ -17,6 +17,8 @@ export default {
     showGiftName: 'ギフト名を表示する',
     mergeSimilarDanmaku: '同じコメントを合併する',
     mergeGift: 'ギフトを合併する',
+    showEntry: 'ライブに入る視聴者を表示する',
+    showFollow: '新しいフォロワーを表示する',
     minGiftPrice: '最低表示スーパーチャット価格（CNY）',
     maxNumber: '最大コメント数',
 

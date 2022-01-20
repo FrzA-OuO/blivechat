@@ -17,6 +17,8 @@ export default {
     showGiftName: 'Show gift name',
     mergeSimilarDanmaku: 'Merge similar messages',
     mergeGift: 'Merge gifts',
+    showEntry: 'Show viewers entry',
+    showFollow: 'Show new followers',
     minGiftPrice: 'Min price of Super Chats to show (CNY)',
     maxNumber: 'Max number of messages',
 

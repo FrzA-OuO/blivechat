@@ -78,6 +78,8 @@ export default {
       cfg.showGiftName = toBool(cfg.showGiftName)
       cfg.mergeSimilarDanmaku = toBool(cfg.mergeSimilarDanmaku)
       cfg.mergeGift = toBool(cfg.mergeGift)
+      cfg.showEntry = toBool(cfg.showEntry)
+      cfg.showFollow = toBool(cfg.showFollow)
       cfg.maxNumber = toInt(cfg.maxNumber, chatConfig.DEFAULT_CONFIG.maxNumber)
       cfg.blockGiftDanmaku = toBool(cfg.blockGiftDanmaku)
       cfg.blockLevel = toInt(cfg.blockLevel, chatConfig.DEFAULT_CONFIG.blockLevel)
@@ -215,6 +217,10 @@ export default {
       } else if (this.config.blockNotMobileVerified && !data.isMobileVerified) {
         return false
       } else if (this.config.blockMedalLevel > 0 && data.medalLevel < this.config.blockMedalLevel) {
+        return false
+      } else if (!this.config.showEntry && data.isEntry) {
+        return false
+      } else if (!this.config.showFollow && data.isFollow) {
         return false
       }
       return this.filterSuperChatMessage(data)

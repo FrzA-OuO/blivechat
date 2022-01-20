@@ -7,6 +7,8 @@ export const DEFAULT_CONFIG = {
   showGiftName: false,
   mergeSimilarDanmaku: false,
   mergeGift: true,
+  showEntry: false,
+  showFollow: false,
   maxNumber: 60,
 
   blockGiftDanmaku: true,

@@ -43,6 +43,18 @@
             </el-row>
             <el-row :gutter="20">
               <el-col :xs="24" :sm="8">
+                <el-form-item :label="$t('home.showEntry')">
+                  <el-switch v-model="form.showEntry"></el-switch>
+                </el-form-item>
+              </el-col>
+              <el-col :xs="24" :sm="8">
+                <el-form-item :label="$t('home.showFollow')">
+                  <el-switch v-model="form.showFollow"></el-switch>
+                </el-form-item>
+              </el-col>
+            </el-row>
+            <el-row :gutter="20">
+              <el-col :xs="24" :sm="8">
                 <el-form-item :label="$t('home.minGiftPrice')">
                   <el-input v-model.number="form.minGiftPrice" type="number" min="0"></el-input>
                 </el-form-item>
